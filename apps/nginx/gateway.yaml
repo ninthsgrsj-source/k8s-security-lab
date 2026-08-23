@@ -3,6 +3,8 @@ kind: Gateway
 metadata:
   name: nginx-gateway
   namespace: default
+  annotations:
+    networking.istio.io/service-type: ClusterIP
 spec:
   gatewayClassName: istio
   listeners:
